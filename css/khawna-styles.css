@@ -24,7 +24,7 @@ body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background-color: #ececec;
+  background-color: #fff;
 }
 
 a {
@@ -188,12 +188,7 @@ transition: 1s ease;
 }
 
 
-body {
-  background: #e9e9e9;
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 .chat {
   background: #ffffff;
   width: 100%;
