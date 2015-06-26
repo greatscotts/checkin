@@ -1,0 +1,660 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>OrangeApps | k-12 School system</title>
+<meta content="orangeapps,orange,apps,orange apps,orangeappsinc,orangeappsinc.com Orange apps, School Software, orangeapps.ph" name="keywords">
+<meta content="orangeapps is a platform for k-12 schools to manage the admission,communication and grading process simply and securely." name="description">
+<meta content="website" property="og:type">
+<meta content="http://www.orangeappsinc.com/" property="og:url">
+<meta content="OrangeApps | k-12 School system" property="og:title">
+<meta content="OrangeApps is a platform for k-12 schools to manage the admission,communication and grading process simply and securely." property="og:description">
+<meta property="og:image" content="http://www.orangeappsinc.com/images/fb.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OrangeApps is a platform for k-12 schools to manage the admission,communication and grading process simply and securely.">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link rel="canonical" href="http://www.orangeappsinc.com" />
+<link rel="shortcut icon" href="http://www.orangeappsinc.com/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://www.orangeappsinc.com/favicon.ico" type="image/x-icon" />
+
+
+<link href="bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="css/topNav.css" rel="stylesheet" media="screen">
+<link href="css/khawna-styles.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+
+
+
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2oM535D7bXFkUrgi9JZvyWmdPNypSGuK';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
+
+<!--MOBILE SITE REDIRECTION-->
+<script type="text/javascript">
+   if (screen.width <= 500) {
+    window.location = "http://www.orangeappsinc.com/mobilesite/index.html";
+  }
+</script>
+
+
+
+
+<!--GOOGLE ANALYTICS-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61023154-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+if (document.images) {
+    bg1 = new Image();
+    bg1.src = "bg1.jpg";
+    bg = new Image();
+    bg.src = "bg.jpg";
+    bg2 = new Image();
+    bg2.src = "bg2.jpg";
+}
+</script>
+
+
+
+
+
+<!--NAVBAR-->
+<main class="cd-main-content">
+     <nav class=" navbar-inverse " role="navigation">
+      <a class="navbar-brand" href="index.php"><img src="images/headerlogowhite.png" style="margin-left:99px; margin-top:19px;"></a>
+        <ul class="nav navbar-nav navbar-right">
+          <nav id="cd-top-nav" cl ass="hidden-xs">
+          <ul class="nav">
+            <li><a href="../pages/features.php" style="font-size:18px;">Features</a></li>
+          <li><a href="../pages/security.php" style="font-size:18px;">Security</a></li>
+          <li><a href="../pages/pricing.php"style="font-size:18px;">Pricing</a></li>
+          <li><a href="../pages/help.php" style="font-size:18px;">Support</a></li>
+          <li><a href="../pages/contactus.php"style="font-size:18px;">Contact Us</a></li>
+          <li><a type="button" class="btn btn-warning btn-lg btn-block" id="btn-hover" style="font-weight:bold; width:80px;  margin-top:-10px;" href="../login.php">Login</a></li>
+          </ul> 
+        </ul> 
+      </nav>
+    </nav>   
+          
+       
+  <!-- WELCOME SIGNU PAGE-->
+	<form class="form-inline" method="POST" name="thisapp" enctype="multipart/form-data"  autocomplete="off" action="index.php">	
+    <div id="welcometest" class="container-fluid">
+      <div class="section-text">
+        <center> <h1 style="font-size:35px; margin-top:55px; width:950px;line-height: 1.31em; color:white;">Become the modern campus your students expect.<br> Transform your institution with OrangeApps platform tailored for your schools.</h2></center>
+			   <div>&nbsp;</div>
+         <div>&nbsp;</div>
+			   <div style="width:100%; text-align:center; float:left; margin-top:-40px;">
+				<h2 style="color:red; font-size:12pt; font-weight:bold;"><?php echo $errMsg; ?></h1><br>
+			</div>
+
+  <div style="margin-top:5px; width:100%; text-align:center;">
+		<div class="form-group">
+			<label class="sr-only " for="exampleInputEmail2">Mobile number</label>
+				<input type="text" class="form-control input-lg" id="exampleInputEmail2" name="txtPhone" placeholder="Enter Mobile Number" onkeyup="javascript:this.value=this.value.replace(/[^0-9+,]/g, '');" maxlength="11">
+		</div>
+		<div class="form-group">
+			<label class="sr-only" for="exampleInputPassword2">School Name</label>
+			  <input type="text" class="form-control input-lg" id="exampleInputPassword2" name="txtSchool" placeholder="School Name">
+		</div>
+			 <input type="submit" name="SIGNUP" value="Sign Up for Free" style="font-weight:bold;" class="btn btn-warning btn-lg">
+		</div>
+	</div>
+</div>
+</form>
+
+   
+
+<!-- INTRODUCTION OF PRODUCT-->
+<div id="students" class="container-fluid">
+  <div class="section-text" >
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <center><h4 style="font-size:35px;">"Introducing OrangeApps School cloud"</h1>   
+     <div>&nbsp;</div>
+     <div>&nbsp;</div> 
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>  
+  </div>
+ </div>
+</div>
+
+<!-- TAB TITLES -->
+<div id="students" class="container-fluid" style="margin-left:50px;margin-right:80px;">
+<ul class="nav nav-tabs nav-justified"> 
+  <li class="active"><a href="#published" role="tab" data-toggle="tab" style="font-size:22px;">Enrollment</a></li>
+  <li><a href="#pending" role="tab" data-toggle="tab"style="font-size:22px;">Grades</a></li>
+  <li><a href="#reviews" role="tab" data-toggle="tab"style="font-size:22px;">Tuition fee</a></li>
+  <li><a href="#delivery" role="tab" data-toggle="tab"style="font-size:22px;">Reports</a></li>
+</ul>
+
+<!-- TAB 1 -->
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="published">
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div class="row" style="margin-left:49px; margin-top:150px;">
+      <div class="col-sm-8 col-md-7">
+       <div class="caption" style="margin-top:-50px;margin-left:-50px;">
+         <h4 style="font-size:35px;">Enrollment</h4>
+          <div style="margin-right:1px;">
+          <div style="font-size:20px;">This latest technology feature will allow the students to see the requirements for enrollment and also enables them to enroll and process/pay school fees easily and accessible using the mobile app or the web. This benefits the school and the students/parents to lessen long queue during payment or processing other enrolment related concerns. </div>
+          <a type="button" class="btn btn-primary btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/features.php">See more details</a> <a type="button" class="btn btn-warning btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/pricing.php">Pricing</a>
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-4">
+        <center><img src="img/enrollment.png" style="width:569px;margin-left:470px; margin-top:-370px;"></center>
+      </div>
+    </div>
+ </div>
+</div>  
+
+    
+
+<!-- TAB 2 -->
+<div class="tab-pane fade" id="pending">
+   <div class="row" style="margin-left:49px; margin-top:190px;">
+      <div class="col-sm-8 col-md-7">
+       <div class="caption" style="margin-top:-50px;margin-left:-50px;">
+         <h4 style="font-size:35px;">Grades</h4>
+          <div style="margin-right:1px;">
+          <div style="font-size:20px;">This feature allows the teachers to encode and upload the grades of their students online. Profiting the students to become updated with their class standing/performances easily.</div>
+           <a type="button" class="btn btn-primary btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/features.php">See more details</a> <a type="button" class="btn btn-warning btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/pricing.php">Pricing</a>
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-4">
+        <center><img src="img/grades.png" style="width:669px;margin-left:400px; margin-top:-320px;"></center>
+      </div>
+    </div>
+ </div>
+  </div>  
+
+
+<!-- TAB 3 -->
+<div class="tab-pane fade" id="reviews">
+ <div class="row" style="margin-left:49px; margin-top:190px;">
+      <div class="col-sm-8 col-md-7">
+       <div class="caption" style="margin-top:-50px; margin-left:-50px;">
+         <h4 style="font-size:35px;">Tuition fee</h4>
+          <div style="margin-right:1px;">
+          <div style="font-size:20px;">Parents can now monitor their school fees using there mobile devices or laptops,this gives the parents a hassle free user experience. </div>
+           <a type="button" class="btn btn-primary btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/features.php">See more details</a> <a type="button" class="btn btn-warning btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/pricing.php">Pricing</a>
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-4">
+        <center><img src="img/tuition.png" style="width:769px;margin-left:100px; margin-top:-320px;"></center>
+      </div>
+    </div>
+ </div>
+</div>  
+
+
+<!-- TAB 4 -->
+<div class="tab-pane fade" id="delivery">
+ <div class="row" style="margin-left:49px; margin-top:190px;">
+      <div class="col-sm-8 col-md-7">
+       <div class="caption" style="margin-top:-50px;margin-left:-50px;">
+         <h4 style="font-size:35px;">Reports</h4>
+          <div style="margin-right:1px;">
+          <div style="font-size:20px;">Schools can now take advantage of monitoring the entire school with the use of data, we believe with data analytics schools can further improve it's decision making based on the following reports such as percentage of passers and failures,number of enrolled students per grade level and a whole lot more.</div>
+           <a type="button" class="btn btn-primary btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/features.php">See more details</a> <a type="button" class="btn btn-warning btn-lg "  style="font-weight:bold; width:170px; font-size:15px; margin-top:20px;" href="../pages/pricing.php">Pricing</a>
+        </div>
+      </div>
+      <div class="col-sm-8 col-md-4">
+        <center><img src="img/reports.png" style="width:569px;margin-left:400px; margin-top:-370px;"></center>
+      </div>
+    </div>
+ </div>
+</div>  
+</div>  
+</div>  
+</div>  
+
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+
+
+ 
+
+<!-- Video player -->
+<div id="homebg2" class="container-fluid">
+    <h2 style="margin-left:50px; margin-right:50px;margin-top:5px; font-size:40px; "><center>Watch how OrangeApps can help your school</center></h2>
+     <div class="pretty-fade dummy">
+     <center><a href="pages/video.php"><img src="img/play.png" style="width:59px; margin-top:10px;"></a></center>
+</div>
+    </div>
+
+
+<!-- 3 key -->
+<div style="margin-left:50px;margin-right:50px; margin-top:100px;">
+ <div class="col-sm-8 col-md-4">
+  <center><img src="img/ex1.jpg" style="width:299px; height:195px;  margin-left:px;margin-top:30px;"></center>
+    <div class="caption">
+      <center><h3>Innovative school brand</h3>
+        <div style="margin-left:60px;margin-right:60px;">
+         <div style="font-size:16px;">Your school will be known everywhere because of its world-class technological service making you more efficient in giving a state-of-the art quality education to the students.</div>
+          <br>
+           
+      </center>
+    </div>
+  </div>
+
+      <div class="col-sm-8 col-md-4">
+       <center><img src="img/ex2.jpg" style="width:299px;height:195px; margin-top:30px;"></center>
+    <div class="caption">
+      <center><h3>Attract more Enrollees & Revenue </h3>
+        <div style="margin-left:60px;margin-right:60px;">
+         <div style="font-size:16px;">Through right approach and quality service that the school can provide, it will draw a lot of positive feedback that will echo not just inside the school but everywhere they are.</div>
+          <br>
+          </center>
+         </div>
+      </div>
+ 
+      <div class="col-sm-8 col-md-4">
+         <center><img src="img/ex3.jpg" style="width:299px;height:195px; margin-top:30px;margin-left:1px;"></center>
+         <div class="caption">
+          <Center><h3>Safe & Secured data</h3>
+            <div style="margin-left:60px;margin-right:60px;">
+           <center><div style="font-size:16px;">Data are secured in the cloud, giving a full assurance that the school need not to worry about data loss. With our advance technology, we make sure that your security is our top priority! </div><br>
+           </center>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  
+
+  <!-- WELCOME 2   
+ <div id="studentss" class="container-fluid"></div>
+   <div id="welcome2"class="container-fluid" style="background:#1abc9c; transition: all 0.35s ease-in-out;" onmouseover="this.style.background='#3498db';" onmouseout="this.style.background='#1abc9c';">
+    <div class="section-text" >
+
+     <center> 
+     <h2 style="font-size:29px; margin-top:-90px;">Learn what OrangeApps can do for you</h2><br><br><br><br>
+     <a href="../pages/why"  style="color:white; text-decoration: none"> <h2 style="font-size:59px; margin-top:-60px; font-weight:bold; font-color:white; ">Take the Tour <img src="images/right.png "  class="img-circle" style="width:119px;"> </a></h1><br><br><br><br><br>
+         <h2 style="font-size:29px; margin-top:-90px;">Screenshots,features and more</h2><br><br>
+    </div>
+ </div>
+
+ <!-- testimonials
+<div id="testimonials"class="container-fluid">
+  <div style="margin-left:50px;margin-right:50px;margin-top:-159px;">
+     <div>&nbsp;</div>
+      <div>&nbsp;</div>
+    <center><h2 style="color:black;margin-left:-20px;">How it works</h2>
+    <h2 style="color:black;margin-left:-20px; font-size:20px;">With 3 simple steps, your school will have its own system</center>
+     <div>&nbsp;</div>
+     <div>&nbsp;</div><div>&nbsp;</div>
+      <div class="col-sm-4 col-md-4" style="margin-left:-20px;">
+        <center><img src="images/signup.png" style="width:63px;" ></center>
+          <div class="caption">
+           <center>
+            <div style="margin-left:60px;margin-right:60px;">
+              <br>
+               <h4 style="color:black;">Sign Up for free </p>
+               
+              </center>
+            </div>
+        </div>
+
+      <div class="col-sm-8 col-md-4">
+        <center><img src="images/setup.png"  style="width:139px;"></center>
+         <div class="caption">
+          <center>
+            <br>
+            <div style="margin-left:60px;margin-right:60px; margin-top:14px;">
+         <h4 style="color:black;">Setup your school </p>
+          
+          </center>
+         </div>
+      </div>
+
+
+ 
+      <div class="col-sm-8 col-md-4">
+         <center><img src="images/launch.png" style="width:159px; margin-left:40px;" ></center>
+         <div class="caption">
+          <Center>
+            <div style="margin-left:60px;margin-right:60px;">
+              <br>
+          <h4 style="color:black;">School is ready to Launch</p>
+         
+          </center>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>--> 
+
+
+<!-- OUTRO-->
+ <div id="studentsss" class="container-fluid"></div>
+   <div id="homebg3"class="container-fluid" >
+    <div class="section-text" >
+     <center><h1 style="margin-top:-20px;"><B>#1 Cloud based School system </b></h1>
+      <p style="font-size:20px; margin-left:10px;">OrangeApps delivers innovative solutions that help you improve outcomes,operate efficiently,<Br> and meet the expectation of today's students.</p></center>
+
+   
+      <img src="img/press/rappler2.png"  class="img-circle" style="margin-left:270px;width:100px;">
+      <img src="img/press/blom.png"  style="width:100px;"></a>
+      <img src="img/press/press2.png"  class="img-circle"style="width:100px;"></a>
+      <img src="img/press/press3.png"  class="img-circle"style="width:100px;"></a>&nbsp;&nbsp;
+      <img src="img/press/go.png"   style="width:100px;"></a>
+      <img src="img/press/press6.png"  class="img-circle"style="width:100px;"></a>
+    </div>
+  </div> 
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- 3 COLUMNS 
+<div style=" margin-top:-110px;">
+ <div class="col-sm-8 col-md-4">
+  
+    <div class="caption">
+       <h3><b>Our School doesn't have <br>good facilities.Can we still<br> use OrangeApps?</b></h3>
+           
+           <p>Students, parents and administrators can use <br>OrangeApps at home or anywhere with internet<br> connection.OrangeApps can be accessed from<br> any type of device 24/7.</p>
+     
+          
+          <br>
+           
+      </center>
+    </div>
+  </div>
+
+      <div class="col-sm-8 col-md-4">
+        
+         <div class="caption">
+         <h3><b>How much does it cost?</b></h3>
+            
+           <p>We want OrangeApps to be available to every k-12 <br> schools, so registration and use of the core service is<br> completely free. Certain features may be subject<br> to other packages, which will incur a small fee.</p>
+          
+          </center>
+         </div>
+      </div>
+ 
+      <div class="col-sm-8 col-md-4">
+         
+         <div class="caption">
+         <h3><b>Will our school data be safe and accessible?</b></h3>
+           
+           <p>With our advance technology, we make sure that your security is our top priority! We are working with one of the best global cloud companies to make sure that your data is safe and secured.
+</p><br>
+           
+          </center>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+         
+    </div>
+ </div>
+
+  
+
+  
+
+
+ <!-- testimonials
+<div id="testimonials"class="container-fluid">
+  <div style="margin-left:50px;margin-right:50px;margin-top:-109px;">
+     <div>&nbsp;</div>
+      <div>&nbsp;</div>
+    <center><h2 style="color:black;margin-left:-20px;">What our Customers have to say</h2>
+   
+     <div>&nbsp;</div>
+      <div class="col-sm-4 col-md-4" style="margin-left:-20px;">
+        <center><img src="img/c1.png" style="width:149px;" class="img-circle"></center>
+          <div class="caption">
+           <center>
+            <div style="margin-left:60px;margin-right:60px;">
+              <br>
+               <p style="color:black">"Salamat sa Orange Apps dahil mabilis na akong makapagbubukas ng aking SIS. Freshmen pa lang po ako. I will recommend this to my blockmates. A job well done"</p>
+               
+              </center>
+            </div>
+        </div>
+
+      <div class="col-sm-8 col-md-4">
+        <center><img src="img/c222.png" style="width:149px;"></center>
+         <div class="caption">
+          <center>
+            <br>
+            <div style="margin-left:60px;margin-right:60px;">
+           <p style="color:black">"Really Helpful Thanks for creating this app at least i don’t need to log on to my computer just to look and check my grades"</p>
+          
+          </center>
+         </div>
+      </div>
+
+
+ 
+      <div class="col-sm-8 col-md-4">
+         <center><img src="img/c3.png" style="width:149px;" class="img-circle"></center>
+         <div class="caption">
+          <Center>
+            <div style="margin-left:60px;margin-right:60px;">
+              <br>
+           <p style="color:black">"nice app!! Di na mahihirapan ang mga bedans na tignan yung mga grades and announcements. Nice job!!"</p>
+         
+          </center>
+        </div>
+        <div>&nbsp;</div>
+          <div>&nbsp;</div>
+             <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                 <div>&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>--> 
+
+ <!-- client 
+<div id="students" class="container-fluid">
+   <div>&nbsp;</div>
+      <div>&nbsp;</div>
+     <div id="students2" >
+       <div class="row">
+        <Center>
+         <img src="images/school/1.png"  class="img-circle" style="width:99px;"></a>&nbsp;
+         <img src="images/school/3.png"  class="img-circle" style="width:99px;"></a>&nbsp; 
+         <img src="images/school/2.png"  class="img-circle" style="width:99px;"></a>&nbsp;
+         <img src="images/school/4.png"  class="img-circle" style="width:99px;"></a>&nbsp;
+         <img src="images/school/5.png"  class="img-circle" style="width:99px;"></a>&nbsp;
+         <img src="images/school/6.png"  class="img-circle" style="width:99px; style="margin-left:-99px;""></a>&nbsp;
+         <img src="images/school/7.png"  class="img-circle" style="width:99px;"></a>&nbsp;
+         <img src="images/school/8.jpg"  class="img-circle" style="width:99px;"></a> &nbsp;        
+         <img src="images/school/9.jpg"  class="img-circle" style="width:119px;"></a>               
+       </div>
+       </div>
+     </div>
+    </div> 
+    </div>
+  </div>
+  <div>&nbsp;</div>
+  <div>&nbsp;</div> --> 
+
+
+ <!-- FEATURED
+
+<div id="students" class="container-fluid">
+  <div class="section-text" align="center">
+   <br> 
+      <div class="col-sm-6 col-md-2" ></div>
+        <a href="http://www.rappler.com/business/features/51903-executive-edge-20-year-old-filipino-ceo"> <img src="images/press/rappler2.png"  class="img-circle" style="margin-left:-199px;"></a>
+         <a href="http://www.bloomberg.com/video/philippines-ready-for-tech-start-ups-BV_xDC6STWW6r75IuevPmg.html"> <img src="images/press/blom.jpg"  style="width:140px;"></a>
+        
+        <a href="http://e27.co/orange-apps-co-founder-gian-javelona-on-getting-an-early-start-with-entrepreneurship/"> <img src="images/press/press2.png"  class="img-circle"></a>
+        
+        <a href="https://www.techinasia.com/gian-scottie-javelona-philippines-teen-developer-sensation/"> <img src="images/press/press3.png"  class="img-circle"></a>&nbsp;&nbsp;
+        
+       <a href="http://www.gonegosyo.net/blog/uncategorized/go-negosyo-holds-mobile-app-challenge-info-session-at-feu-manila/"> <img src="images/press/go.jpg"   style="width:140px;"></a>
+        
+        <a href="https://sg.news.yahoo.com/orange-apps-co-founder-gian-javelona-getting-early-033629173.html"> <img src="images/press/press6.png"  class="img-circle"></a>
+
+    </div>
+  </div> 
+</div>--> 
+
+<!-- WELCOME 2   
+ <div id="studentsss" class="container-fluid"></div>
+   <div id="welcome3"class="container-fluid">
+    <div class="section-text" >
+
+     <center> 
+     <h2 style="font-size:29px; margin-top:-70px;">OrangeApps gives you the most important features that your school needs</h2><br><br><br><br>
+     <a href="../pages/pricing"  style="color:white; ">
+      <h2 style="font-size:29px; margin-top:-60px; font-weight:bold; font-color:white; ">View our Pricing Plans<img src="images/right.png "  class="img-circle" style="width:69px;"> </a></h1><br><br><br><br><br>
+         
+    </div>
+ </div>
+
+
+
+
+
+<!-- WELCOME 2   
+
+
+
+ <div id="studentsss" class="container-fluid"></div>
+   <div id="homebg4"class="container-fluid" style="margin-top:50px;">
+    <div class="section-text" >
+
+     <center> 
+     <h2 style="font-size:69px; margin-top:15px; margin-left:-300px;color:black;"><b>48,000+
+SCHOOLS </b></h2><br><br><br><br>
+     
+      <h2 style="font-size:39px; margin-top:-60px; margin-left:-250px;font-weight:bold; color:black; ">20 million+
+STUDENTS & TEACHERS<img src="images/right.png "  class="img-circle" style="width:69px;"> </a></h1><br><br><br><br><br>
+         
+    </div>
+ </div>-->
+
+<!-- FOOTER -->
+	<div id="students" class="container-fluid">
+		<div class="section-text" >
+			<center><h1 style="font-size:30px; width:950px; margin-top:90px;">We’re on a mission to <b>Empower</b> schools and make the process simpler, more pleasant and more productive.</h1>   
+			<form class="form-inline" method="POST" name="thisapp" enctype="multipart/form-data"  autocomplete="off" action="index.php">	
+				<div style="margin-top:35px; width:100%; text-align:center;">
+				<div class="form-group">
+					<label class="sr-only " for="exampleInputEmail2">Mobile number</label>
+					<input type="text" class="form-control input-lg" id="exampleInputEmail2" name="txtPhone" placeholder="Enter Mobile Number" onkeyup="javascript:this.value=this.value.replace(/[^0-9+,]/g, '');" maxlength="11">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputPassword2">School Name</label>
+					<input type="text" class="form-control input-lg" id="exampleInputPassword2" name="txtSchool" placeholder="School Name">
+				</div>
+			 <input type="submit" name="SIGNUP" value="Sign Up for Free" style="font-weight:bold;" class="btn btn-warning btn-lg">
+			</form>
+		</div>
+	</div>
+	
+     <div>&nbsp;</div>
+     <div>&nbsp;</div> 
+     <div>&nbsp;</div>
+     <div>&nbsp;</div>  
+
+     <CENTER>
+<br>
+ <p >
+© 2015 OrangeApps, Inc. All Rights Reserved.
+          <br>
+            <br>
+          <a href="../index.php">HOME</a>&nbsp;|<a href="../pages/security">&nbsp;SECURITY&nbsp;</a>|<a href="../pages/features">&nbsp;FEATURES&nbsp;</a>|<a href="../pages/pricing">&nbsp;PRICING&nbsp;</a>|<a href="../pages/about">&nbsp;&nbsp;ABOUT&nbsp;</a>|<a href="http://www.orangeappsinc.com/news/" target="_blank">&nbsp;&nbsp;NEWS&nbsp;</a>|<a href="../pages/help">&nbsp;&nbsp;SUPPORT&nbsp;</a>|<a href="../pages/contactus">&nbsp;CONTACT US</a>
+        <br><br><center>
+         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">     
+
+<a href="https://twitter.com/orangeappsHQ" target="_blank" class="icon-button twitter"><i class="fa fa-twitter"></i>
+<span></span></a>
+<a href="https://www.facebook.com/pages/OrangeApps/143345072475481" target="_blank" class="icon-button facebook"><i class="fa fa-facebook"></i>
+<span></span></a>
+<a href="mailto:info@orangeapps.ph" target="_blank" class="icon-button google-plus"><i class="fa fa-google"></i>
+<span></span></a>
+
+</center>
+ <div>&nbsp;</div>
+            <div>&nbsp;</div>
+
+  </div>
+ </div>
+</div>
+
+
+
+
+  
+</div> 
+</div>
+
+  
+</main> <!-- cd-main-content -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/backToTop.js"></script> <!-- Resource jQuery -->
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+ <!-- //-->

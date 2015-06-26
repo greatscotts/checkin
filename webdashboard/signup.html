@@ -1,0 +1,149 @@
+  <!--<?php
+  include("waltzFiles/includes/config.php");
+  include("waltzFiles/includes/functions.php");
+    
+  date_default_timezone_set("Asia/Singapore"); 
+  
+  $fromPageErr = $_GET['e'];
+  if ( $fromPageErr == "1" ) {
+    $errMsg = "Please enter Mobile Number and School Name.";
+  }
+  
+  if ( $_POST['SIGNUP'] ) { 
+    $Phone  = str_replace("'", "`", $_POST['txtPhone']); 
+    $School = str_replace("'", "`", $_POST['txtSchool']); 
+    
+    if ( !$Phone == "" AND !$School == "" ) {
+      $savePassword = get_rand(8);
+      $saveDate   = date('Y-m-d H:i:s');
+      $saveTime   = date('H:i:s');
+      $query = 'SELECT max(id) as maxID FROM prereg_db';
+      $result = mysql_query($query, $link) or die('Query failed: ' . mysql_error());
+      $PID = 0; 
+      while ($rowsRet = mysql_fetch_array($result)) {
+        $PID = $rowsRet['maxID'];
+      }
+      $PID = $PID + 1;
+      
+      /*Romove temporary // confirmation email too slow
+      //SEND EMAIL
+      $sendgrid = new SendGrid($sendgrid_username, $sendgrid_password, array("turn_off_ssl_verification" => true));
+      $email    = new SendGrid\Email();
+      $emailContent = "<strong>Thank you for registering. \r\n  Your confirmation code is $savePassword</strong> </br></br> \r\n";
+      $email->addTo($Email)->
+           setFrom($fromEmail)->
+           setSubject('ORANGEAPPS.PH Confirmation Email')->
+           setHtml($emailContent)->
+           addHeader('X-Sent-Using', 'SendGrid-API')->
+           addHeader('X-Transport', 'web');
+      $response = $sendgrid->send($email);
+      var_dump($response);
+      */
+      
+      
+      //SAVE TO DB
+      $query = "INSERT INTO prereg_db values ( $PID, '$Phone', '$School', '$savePassword', '$saveDate' )";
+      $result = mysql_query($query, $link) or die('There was an error in registration!' . mysql_error());
+      
+      echo "<meta http-equiv='refresh' content='0;url=confirm2.php?id=$PID'>";
+      exit();         
+      
+    } else {
+      $errMsg = "Please enter Mobile Number and School Name.";
+    }
+    
+  }
+?>-->
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<title>OrangeApps | k-12 School system</title>
+<meta content="orangeapps,orange,apps,orange apps,orangeappsinc,orangeappsinc.com Orange apps, School Software, orangeapps.ph" name="keywords">
+<meta content="orangeapps is a platform for k-12 schools to manage the admission,communication and grading process simply and securely." name="description">
+<meta content="website" property="og:type">
+<meta content="http://www.orangeappsinc.com/" property="og:url">
+<meta content="OrangeApps | k-12 School system" property="og:title">
+<meta content="OrangeApps is a platform for k-12 schools to manage the admission,communication and grading process simply and securely." property="og:description">
+<meta property="og:image" content="http://www.orangeappsinc.com/images/fb.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OrangeApps is a platform for k-12 schools to manage the admission,communication and grading process simply and securely.">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<link rel="canonical" href="http://www.orangeappsinc.com" />
+<link rel="shortcut icon" href="http://www.orangeappsinc.com/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://www.orangeappsinc.com/favicon.ico" type="image/x-icon" />
+
+
+<link href="bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="css/topNav.css" rel="stylesheet" media="screen">
+<link href="css/khawna-styles.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+
+
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2oM535D7bXFkUrgi9JZvyWmdPNypSGuK';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
+
+<!--MOBILE SITE REDIRECTION-->
+<script type="text/javascript">
+   if (screen.width <= 500) {
+    window.location = "http://www.orangeappsinc.com/mobilesite/index.html";
+  }
+</script>
+
+
+
+
+<!--GOOGLE ANALYTICS-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61023154-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+if (document.images) {
+    bg1 = new Image();
+    bg1.src = "bg1.jpg";
+    bg = new Image();
+    bg.src = "bg.jpg";
+    bg2 = new Image();
+    bg2.src = "bg2.jpg";
+}
+</script>
+
+
+
+
+
+
+    <body color="grey">
+<center><img src="images/headerlogo.png" style="margin-left:99px; margin-top:3px;">
+  <div style="margin-top:35px; width:100%; ">
+    <div class="form-group">
+      <label class="sr-only " for="exampleInputEmail2">Mobile number</label>
+        <input type="text" class="form-control input-lg" id="exampleInputEmail2" name="txtPhone" placeholder="Enter Mobile Number" onkeyup="javascript:this.value=this.value.replace(/[^0-9+,]/g, '');" maxlength="11">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword2">School Name</label>
+        <input type="text" class="form-control input-lg" id="exampleInputPassword2" name="txtSchool" placeholder="School Name">
+    </div>
+       <input type="submit" name="SIGNUP" value="Sign Up for Free" style="font-weight:bold;" class="btn btn-warning btn-lg">
